@@ -20,9 +20,11 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
-
+.navigation-header a:hover{
+    background: #eeecec4f;
+    transition: all .5s;
+}
 
 .header {
     position: relative;
@@ -48,10 +50,93 @@ img {
     color: darkred;
     text-decoration: none;
     transition: 1s;
-
-
 }
 
 .navigation-header {
     gap: 3em;
 }
+/* cards */
+.hero {  /* primeira parte */
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text {
+    text-align: center;
+}
+ 
+.hero-text h1 {
+    font-size: 3em;
+}
+ 
+.hero-text p {
+    font-size: 1.2em;
+}
+/* botao */
+.btn {
+    background: #000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-top: 210px;
+}
+
+/* cards */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+ 
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+ 
+.card h3 {
+    color: #e50000;
+}
+ 
+.card a {
+    text-decoration: none;
+    color: #e50000;
+    font-weight: bold;
+}
+.card:hover {
+    background: #a5a2a2ad; 
+  }
+ 
+.status {
+    background: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+}
+.status-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/* efeito hover dos cards status */
+.line-status:hover {
+    background: #a39d9d; 
+  }
+
+/* cards do status da linha */
+.line-status {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
