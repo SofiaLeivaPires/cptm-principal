@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+img {
+    width: 120px;
+    position: relative;
+    top: 0;
+    margin: 0;
+    right: 80px;
+}
+
+.header, 
+.navigation-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+.header {
+    position: relative;
+    background-color: rgb(240, 240, 240) ;
+    box-shadow: 1px 1px 4px var(--color-dark2);
+    height: 4em;
+    justify-content:space-between;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+}
+
+.trem-cptm img {
+    width: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding-right: 50px;
+}
+
+.navigation-header a {
+    color: darkred;
+    text-decoration: none;
+    transition: 1s;
+
+
+}
+
+.navigation-header {
+    gap: 3em;
+}
