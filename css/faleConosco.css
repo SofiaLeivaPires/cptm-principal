@@ -3,6 +3,63 @@
     padding: 0;
 }
 
+img {
+    width: 120px;
+    position: relative;
+    top: 0;
+    margin: 0;
+    right: 80px;
+}
+
+.header, 
+.navigation-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20%;
+
+}
+
+.navigation-header a:hover{
+    background: #eeecec4f;
+    transition: all .5s;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(240, 240, 240) ;
+    box-shadow: 1px 1px 4px var(--color-dark2);
+    height: 4em;
+    justify-content: space-between;
+    padding: 0 10%;
+    z-index: 1000; /* Manter o header acima de outros elementos */
+
+}
+
+.trem-cptm img {
+    width: 80px;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 950px;
+    margin-right: 20px;
+    padding-right: 50px;
+    
+}
+
+.navigation-header a {
+    color: darkred;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.navigation-header {
+    gap: 3em;
+}
+
 .container h1{
     font-family: sans-serif;
     color: rgb(0, 0, 0);
