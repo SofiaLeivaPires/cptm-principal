@@ -10,19 +10,16 @@
 <body>
     <div class="header" id="header">
         <div class="logo-header">
-            <a href="index.html">
-            <img src="img/cptm-logo.png" alt="Logo CPTM">
+            <a href="index.html" id="">
+                <img src="img/cptm-logo.png" alt="Logo CPTM">
             </a>
-        </div>
-        <div class="trem-cptm">
-            <img src="img/tremcptm-removebg-preview.png" alt="Trem CPTM">
         </div>
         <div class="navigation-header">
             <a href="index.html" class="active">Home</a>
             <a href="https://www.cptm.sp.gov.br/a-companhia/Pages/a-companhia.aspx" class="active">Sobre Nós</a>
             <a href="servicoTi.html" class="active">Serviço TI</a>
             <a href="faleConosco.html" class="active">Fale Conosco</a>
-            <a href="#" class="active">Solicitar VT</a>
+            <a href="solicitarVt.html" class="active">Solicitar VT</a>
         </div>
     </div>
     <div class="container">
@@ -69,12 +66,13 @@
                             <option value="estagio">Estagiário</option>
                             <option value="empregado">Empregado</option>
                         </select>
+                        <div class="form-group">
+                            <label for="finalidade">Finalidade da Solicitação</label>
+                            <textarea class="form-control" id="finalidade" rows="3" placeholder="Descreva a finalidade da solicitação" required></textarea>
+                        </div> <!-- Fim form group -->
                     </div>
 
-                    <div class="form-group">
-                        <label for="finalidade">Finalidade da Solicitação</label>
-                        <textarea class="form-control" id="finalidade" rows="3" placeholder="Descreva a finalidade da solicitação" required></textarea>
-                    </div> <!-- Fim form group -->
+                  
                 </div> <!-- Fim input group -->
 
                 
@@ -89,5 +87,4 @@
     </div> <!-- Fim container -->
 
 </body>
-
 </html>

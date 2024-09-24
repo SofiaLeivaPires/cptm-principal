@@ -3,28 +3,25 @@
     padding: 0; /* Remove padding padrão de todos os elementos */
     margin: 0; /* Remove margem padrão de todos os elementos */
     box-sizing: border-box; /* Inclui padding e borda no tamanho total dos elementos */
-    font-family: 'Inter', sans-serif; /* Define a fonte padrão para todos os elementos */
 }
 
 body {
-    width: 100%; /* Define a largura do corpo como 100% da tela */
-    height: 100vh; /* Define a altura do corpo como 100% da altura da janela */
-    display: flex; /* Usa flexbox para o layout do corpo */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    background: rgb(226, 222, 222); /* Define a cor de fundo do corpo */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    font-size: 1em;
+    min-height: 100vh;
+
 
 }
 
-.logo-header img,
-.trem-cptm img {
+.logo-header img {
     width: 120px;
     position: relative;
     top: 0;
     margin: 0;
     right: 80px;
+    
 }
 
 .header, 
@@ -35,48 +32,41 @@ body {
 }
 
 .navigation-header a:hover{
-    background: #eeecec4f;
+    background: #e00b0b9f;
     transition: all .5s;
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
+    position: relative;
     background-color: rgb(240, 240, 240) ;
     box-shadow: 1px 1px 4px var(--color-dark2);
-    height: 4em;
+    height: 5em;
     justify-content:space-between;
     padding: 0 10%;
-    z-index: 1000;
-    
-}
-
-.trem-cptm img {
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 950px;
-    margin-right: 20px;
-    padding-right: 50px;
-    
+    /* display: flex;
+    align-items: center; */
+    box-shadow: 0px /* eixo x */ 5px /* eixo y */15px /* sombra */ rgba(0, 0, 0, 0.2);   /* Voltar aqui */
 }
 
 .navigation-header a {
-    color: darkred;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    transition: 1s;
+    background-color: #e00b0b;
+    padding: 1px 8px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: bold;
+    
 }
 
+
 .navigation-header {
-    gap: 3em;
+    gap: 3.98em;
 }
 
 
 .container {
-    position: relative; /* Necessário para o posicionamento absoluto do logo */
     width: 90%; /* Define a largura do container como 90% da tela */
     max-width: 1200px; /* Define a largura máxima do container */
     height: auto; /* Define a altura automática do container */
@@ -85,6 +75,12 @@ body {
     border-radius: 15px; /* Adiciona bordas arredondadas ao container */
     overflow: hidden; /* Garante que nada saia do container */
     background-color: #fff; /* Define a cor de fundo do container */
+    position: absolute; /* Permite centralizar em relação ao body */
+    top: 52%; /* Coloca no meio da tela */
+    left: 50%; /* Coloca no meio da tela */
+    transform: translate(-50%, -50%); 
+    
+
 }
 
 .form-image-logo {
@@ -205,12 +201,12 @@ body {
     font-size: 0.875rem; /* Define o tamanho da fonte dos labels e títulos */
     font-weight: 600; /* Define o peso da fonte dos labels e títulos */
     color: #000000c0; /* Define a cor dos labels e títulos */
-    
 }
 
 .form-group {
     width: 100%; /* Define a largura do grupo de formulário */
     margin-top: 1rem; /* Adiciona margem superior ao grupo de formulário */
+    
 }
 
 .form-group label {
@@ -227,8 +223,6 @@ body {
 .form-group textarea:focus-visible {
     outline: 1px solid rgb(212, 14, 14); /* Adiciona contorno aos inputs quando focados */
 }
-
-
 
 .form-group textarea {
     width: 100%; /* Define a largura do textarea */
@@ -275,15 +269,3 @@ body {
     font-weight: 500;
     color: #fff;
 }
-
-/* 
-footer {
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    background: #ed5a0e;
-    color: #ffffff;
-    box-sizing: border-box;
-} */
