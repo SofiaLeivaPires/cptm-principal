@@ -26,33 +26,37 @@ body {
 }
 
 .navigation-header a:hover{
-    background: #e00b0b9f;
-    transition: all .5s;
-}
+    background-color: #e00b0b; 
+    color: white;  
+   }
 
 .header {
     position: relative;
     background-color: rgb(240, 240, 240) ;
-    box-shadow: 1px 1px 4px var(--color-dark2);
     height: 4em;
     justify-content:space-between;
     padding: 0 10%;
     display: flex;
     align-items: center;
-    box-shadow: 0px /* eixo x */ 5px /* eixo y */15px /* sombra */ rgba(0, 0, 0, 0.2);   /* Voltar aqui */
+    box-shadow: 0px  5px 15px  rgba(0, 0, 0, 0.2);   
     /* z-index: 1000; */
 }
 
 .navigation-header a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    background-color: #e00b0b;
+    background-color: transparent;
     padding: 1px 8px;
     border-radius: 7px;
     text-transform: uppercase;
     font-size: medium;
     font-weight: bold;
 
+}
+
+#home{
+    color: white;
+    background-color: #e00b0b;
 }
 
 .navigation-header {
@@ -107,7 +111,7 @@ body {
 }
 
 .card {
-    background: #f4f4f4;
+    background: transparent;
     padding: 20px;
     border-radius: 10px;
     width: 250px;

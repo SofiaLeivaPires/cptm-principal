@@ -11,8 +11,7 @@ body {
     background-color: rgb(255, 255, 255);
     font-size: 1em;
     min-height: 100vh;
-
-
+    background: rgb(226, 222, 222);
 }
 
 .logo-header img {
@@ -32,14 +31,13 @@ body {
 }
 
 .navigation-header a:hover{
-    background: #e00b0b9f;
-    transition: all .5s;
+    background-color: #e00b0b; 
+    color: white;
 }
 
 .header {
     position: relative;
     background-color: rgb(240, 240, 240) ;
-    box-shadow: 1px 1px 4px var(--color-dark2);
     height: 5em;
     justify-content:space-between;
     padding: 0 10%;
@@ -48,10 +46,15 @@ body {
     box-shadow: 0px /* eixo x */ 5px /* eixo y */15px /* sombra */ rgba(0, 0, 0, 0.2);   /* Voltar aqui */
 }
 
-.navigation-header a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+#servicoti{
+    color: white;
     background-color: #e00b0b;
+}
+
+.navigation-header a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: transparent;
     padding: 1px 8px;
     border-radius: 7px;
     text-transform: uppercase;

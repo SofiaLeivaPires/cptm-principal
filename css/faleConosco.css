@@ -8,9 +8,7 @@ body {
     font-size: 20px;
     background-color: rgb(255, 255, 255);
     font-size: 1em;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;  */
+    background: rgb(226, 222, 222);
     min-height: 100vh;
 
 
@@ -33,27 +31,28 @@ body {
 }
 
 .navigation-header a:hover{
-    background: #e00b0b9f;
-    transition: all .5s;
-}
+    background-color: #e00b0b; 
+    color: white;
+   }
 
 .header {
     position: relative;
     background-color: rgb(240, 240, 240) ;
-    box-shadow: 1px 1px 4px var(--color-dark2);
     height: 5em;
     justify-content:space-between;
     padding: 0 10%;
-    /* display: flex;
-    align-items: center; */
-    box-shadow: 0px /* eixo x */ 5px /* eixo y */15px /* sombra */ rgba(0, 0, 0, 0.2);   /* Voltar aqui */
+    box-shadow: 0px 5px 15px  rgba(0, 0, 0, 0.2); 
 }
 
+#faleconosco{
+    color: white;
+    background-color: #e00b0b;
+}
 
 .navigation-header a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    background-color: #e00b0b;
+    background-color: transparent;
     padding: 1px 8px;
     border-radius: 7px;
     text-transform: uppercase;
@@ -88,23 +87,24 @@ fieldset{
 
 .container {
     width: 500px;
-    background: transparent;
+    background: white;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.397);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 15px  rgba(0, 0, 0, 0.2); 
     color: #fff;
-    position: absolute; /* Permite centralizar em relação ao body */
-    top: 52%; /* Coloca no meio da tela */
-    left: 50%; /* Coloca no meio da tela */
+    position: absolute;
+    top: 52%;
+    left: 50%; 
     transform: translate(-50%, -50%); 
-    
-
 }
 
 
 #email{
     width: 18.6em;
+}
+
+input:hover{
+    background-color: #eeeeee75; 
 }
 
 input, select, textarea, button{
