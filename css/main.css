@@ -6,6 +6,7 @@
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    scroll-behavior: smooth;
     /* z-index: 0; */
 }
 
@@ -64,7 +65,7 @@ body {
 }
 
 .main {
-    background: url(../img/teste-bg4.jpg) no-repeat;
+    background: url(../img/teste-bg4.png) no-repeat;
     background-size:cover ;
     background-position: center;
 }
@@ -142,7 +143,7 @@ body {
 }
 /* efeito hover dos cards status */
 .line-status:hover {
-    background: #c2bcbc; 
+    background: #a39d9d; 
   }
 
 /* cards do status da linha */
