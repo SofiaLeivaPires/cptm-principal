@@ -6,29 +6,12 @@
 }
 
 body {
-    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     background-color: rgb(255, 255, 255);
     font-size: 1em;
     min-height: 100vh;
     background: rgb(226, 222, 222);
-}
-
-
-.container {
-    width: 90%; /* Define a largura do container como 90% da tela */
-    max-width: 1200px; /* Define a largura máxima do container */
-    height: 80vh; /* Define a altura automática do container */
-    display: flex; /* Usa flexbox para o layout do container */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212); /* Adiciona sombra ao container */
-    border-radius: 15px; /* Adiciona bordas arredondadas ao container */
-    overflow: hidden; /* Garante que nada saia do container */
-    background-color: #fff; /* Define a cor de fundo do container */
-    position: absolute; /* Permite centralizar em relação ao body */
-    top: 52%; /* Coloca no meio da tela */
-    left: 50%; /* Coloca no meio da tela */
-    transform: translate(-50%, -50%); 
-
 }
 
 .logo-header img {
@@ -85,6 +68,24 @@ body {
     gap: 3.98em;
 }
 
+
+.container {
+    width: 90%; /* Define a largura do container como 90% da tela */
+    max-width: 1200px; /* Define a largura máxima do container */
+    height: auto; /* Define a altura automática do container */
+    display: flex; /* Usa flexbox para o layout do container */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212); /* Adiciona sombra ao container */
+    border-radius: 15px; /* Adiciona bordas arredondadas ao container */
+    overflow: hidden; /* Garante que nada saia do container */
+    background-color: #fff; /* Define a cor de fundo do container */
+    position: absolute; /* Permite centralizar em relação ao body */
+    top: 52%; /* Coloca no meio da tela */
+    left: 50%; /* Coloca no meio da tela */
+    transform: translate(-50%, -50%); 
+    
+
+}
+
 .form-image-logo {
     position: absolute; /* Posiciona o logo de forma absoluta dentro do container */
 }
@@ -101,28 +102,27 @@ body {
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     align-items: center; /* Centraliza o conteúdo verticalmente */
     position: relative; /* Necessário para o posicionamento do logo */
-    padding: 2rem; /* Adiciona padding à área da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-
+    padding: 1rem; /* Adiciona padding à área da imagem */
 }
 
 .form-image img {
     max-width: 100%; /* Garante que a imagem não exceda a largura da área da imagem */
     border-radius: 2rem; /* Adiciona bordas arredondadas à imagem */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 .form {
-    width: 50%; /* Define a largura da área do formulário */
+    width: 60%; /* Define a largura da área do formulário */
     display: flex; /* Usa flexbox para o layout da área do formulário */
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     align-items: center; /* Centraliza o conteúdo verticalmente */
     flex-direction: column; /* Alinha os itens em coluna */
+    background-color: #fff; /* Define a cor de fundo da área do formulário */
     padding: 2rem; /* Adiciona padding à área do formulário */
 }
 
 .form-header {
-    margin-top: 3%;
-    margin-bottom: 2rem; /* Ajusta a margem inferior do cabeçalho do formulário */
+    margin-bottom: 3rem; /* Ajusta a margem inferior do cabeçalho do formulário */
     display: flex; /* Usa flexbox para o layout do cabeçalho */
     flex-direction: column; /* Alinha os itens em coluna */
     align-items: center; /* Centraliza o conteúdo horizontalmente */
@@ -153,36 +153,25 @@ body {
     flex-direction: column; /* Alinha os itens em coluna */
 }
 
-
-.input-box input,
-.input-box select,
-.form-group textarea {
-    margin-top: 0.9rem; /* Adiciona margem ao redor dos inputs */
-    padding: 10px; /* Adiciona padding dentro dos inputs */
-    border: 1px solid #bebdbd;
+.input-box input {
+    margin: 0.5rem; /* Adiciona margem ao redor dos inputs */
+    padding: 0.8rem 1.2rem; /* Adiciona padding dentro dos inputs */
+    border: none; /* Remove a borda dos inputs */
     border-radius: 5px; /* Adiciona bordas arredondadas aos inputs */
-    box-shadow: 2px 5px 6px #4828281c; /* Adiciona sombra aos inputs */
-    font-size: 12px; /* Define o tamanho da fonte dos inputs */
-    content: " "; /* Adiciona conteúdo vazio após o título */
+    box-shadow: 1px 1px 6px #0000001c; /* Adiciona sombra aos inputs */
+    font-size: 0.7rem; /* Define o tamanho da fonte dos inputs */
 }
 
-.input-box input:hover,
-.input-box select:hover,
-.form-group textarea:hover {
-    background-color: #fcdddd; /* Muda a cor de fundo dos inputs ao passar o mouse */
+.input-box input:hover {
+    background-color: #eeeeee75; /* Muda a cor de fundo dos inputs ao passar o mouse */
 }
 
-.input-box input:focus-visible,
-.input-box select:focus-visible  {
+.input-box input:focus-visible {
     outline: 1px solid rgb(212, 14, 14); /* Adiciona contorno aos inputs quando focados */
 }
 
-.input-box input::placeholder,
-.form-group ::placeholder
- {
-    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-size: 14px;
-    color: #000000; /* Define a cor do texto do placeholder */
+.input-box input::placeholder {
+    color: #000000be; /* Define a cor do texto do placeholder */
 }
 
 .input-box select {
@@ -190,34 +179,60 @@ body {
     -webkit-appearance: none;
 }
 
-.input-box option {
-    background-color: #ffffff; /* Muda a cor de fundo dos inputs ao passar o mouse */
-
+.input-box select:hover {
+    background-color: #eeeeee75; /* Muda a cor de fundo dos inputs ao passar o mouse */
 }
 
-.input-box,
+.input-box select:focus-visible {
+    outline: 1px solid rgb(212, 14, 14); /* Adiciona contorno aos inputs quando focados */
+}
+
+.input-box input,
+.input-box select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    color: #333;
+    box-shadow: 1px 1px 6px #0000001c; /* Adiciona sombra aos inputs */
+    content: " "; /* Adiciona conteúdo vazio após o título */
+    
+}
+
+.input-box label,
 .form-group {
+    font-size: 0.875rem; /* Define o tamanho da fonte dos labels e títulos */
     font-weight: 600; /* Define o peso da fonte dos labels e títulos */
     color: #000000c0; /* Define a cor dos labels e títulos */
-    
 }
 
 .form-group {
     width: 100%; /* Define a largura do grupo de formulário */
     margin-top: 1rem; /* Adiciona margem superior ao grupo de formulário */
     
-    
 }
 
 .form-group label {
     display: block; /* Exibe o label como um bloco */
+    margin-bottom: 0.5rem; /* Adiciona margem inferior ao label */
     border: 5px;
     
 }
 
+.form-group textarea:hover {
+    background-color: #eeeeee75; /* Muda a cor de fundo dos inputs ao passar o mouse */
+}
+
+.form-group textarea:focus-visible {
+    outline: 1px solid rgb(212, 14, 14); /* Adiciona contorno aos inputs quando focados */
+}
+
 .form-group textarea {
     width: 100%; /* Define a largura do textarea */
+    padding: 0.8rem 1.2rem; /* Adiciona padding dentro do textarea */
+    border: 1px solid #ddd; /* Define a borda do textarea */
     border-radius: 5px; /* Adiciona bordas arredondadas ao textarea */
+    font-size: 0.875rem; /* Define o tamanho da fonte do textarea */
     resize: none; /* Remove a capacidade de redimensionar o textarea */
     box-shadow: 1px 1px 6px #0000001c; /* Adiciona sombra aos inputs */
 }
@@ -256,44 +271,4 @@ body {
     font-size: 0.93rem;
     font-weight: 500;
     color: #fff;
-}
-
-@media screen and (max-width: 1330px) {
-    .form-image {
-        display: none;
-    }
-    .container {
-        width: 50%;
-    }
-    .form {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1064px) {
-    .container {
-        width: 50%;
-        height: auto;
-    }
-    .input-group {
-        flex-direction: column;
-        z-index: 5;
-        padding-right: 5rem;
-        max-height: 20rem;
-        overflow-y: scroll;
-        flex-wrap: nowrap;
-
-    }
-    .gender-inputs {
-        margin-top: 2rem;
-    }
-    .gender-group {
-        flex-direction: column;
-    }
-    .gender-title h6 {
-        margin: 0;
-    }
-    .gender-input {
-        margin-top: 0.5rem;
-    }
 }
