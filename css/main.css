@@ -163,46 +163,56 @@ body {
     --color-neutral-40: #fcfcfc; /* cor do icone*/
     
 }
-*{
+
+footer{
+    width: 100%;
+    color: rgb(255, 255, 255);
     font-family: 'Inter', sans-serif; 
     margin: 0;
     padding: 0; /* remove os espaçamentos*/
     box-sizing: border-box;
     letter-spacing: 1px;
 }
-footer{
-    width: 100%;
-    color: var(--color-neutral-10);
-}
 #footer_content{
-    background-color: var(--color-neutral-0);
-    display: grid;
+    background: linear-gradient(#f07470,  #dc1c13, #f81205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(3,1fr); /* coloca a qntd de colunas*/
     padding: 3rem 3.5rem; /* espaçamento*/
 }
+
 .footer-link{
     text-decoration: none; /* remove o link*/ 
    
 }
-.footer-list{
-   display: flex;
-   flex-direction: column;
-   gap: 0.75rem;
-   list-style: none;
+
+.footer-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
 }
-.footer-list .footer-link{
-    color: var(--color-neutral-10);
- }
- .footer-list .footer-link:hover{
-    color: var(--color-neutral-30);
-    transition: all 0.6s;
-    font-weight: bold;
- }
+
+#copyr{
+    font-size: xx-small;
+    padding-top: 5px;
+}
+
+#text1{
+    font-size: 1ch;
+}
 
 #footer_contacts h4{
+     font-weight: 900;
      margin-bottom: 0.75rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 #footer_social_media{
+    align-items: center;
+    justify-content: center;
     display: flex;
     gap: 2rem;
     margin-top: 1.5rem;
@@ -212,7 +222,7 @@ main{  é usado p caso queira mandar p baixo
    
 } */
 #footer_social_media .footer-link{
-   display: flex; /* CENTRALIZA */
+    display: flex; /* CENTRALIZA */
     align-items: center;
     justify-content: center;
     height: 2.5rem;
@@ -224,21 +234,6 @@ main{  é usado p caso queira mandar p baixo
 #footer_social_media .footer-link:hover{
     opacity: 0.8;
 }
-#input_group{
-    display: flex;
-    align-items: center;
-    background-color: gainsboro;
-    border-radius: 3px;
-}
-#input_group{
-    all: unset;
-    padding: 0.75rem;
-    width: 100%;
-}
-
-#input_group button:hover{
-    transition: all 0.8s;
-}
 #instagram{
   background: linear-gradient(#7f37c9, #ff2992, #ff9807);
 }
@@ -248,6 +243,43 @@ main{  é usado p caso queira mandar p baixo
 #whatsapp{
     background: linear-gradient(#06963d, #23ca4d, #29a548);
 }
+
+.footer_logo_container{
+    background-color: #000;
+    height: auto;
+    display: flex;
+}
+
+.footer-list{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 25%; 
+    gap: 0.75rem;
+    list-style: none;
+} 
+
+.footer_logo_container .footer-link{
+    text-decoration: none; /* remove o link*/
+    color: white; 
+    font-size: 1ch;
+    text-transform: uppercase;
+}
+
+.footer_logo_container .footer-link:hover{
+    padding: 3px 5px;
+    background-color:  #e00b0b; 
+    border-radius: 10px;
+}
+
+#logo-governo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47%; 
+    
+} 
+
 /* responsividade*/
 @media screen and (max-width: 768px){
     #footer_content{
