@@ -6,7 +6,6 @@
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    scroll-behavior: smooth;
     /* z-index: 0; */
 }
 
@@ -65,7 +64,7 @@ body {
 }
 
 .main {
-    background: url(../img/teste-bg4.png) no-repeat;
+    background: url(../img/teste-bg4.jpg) no-repeat;
     background-size:cover ;
     background-position: center;
 }
@@ -141,17 +140,145 @@ body {
     justify-content: center;
     gap: 20px;
 }
-/* efeito hover dos cards status */
-.line-status:hover {
-    background: #a39d9d; 
-  }
 
-/* cards do status da linha */
+/* RUBI */
 .line-status {
-    background: #fff;
+    background: #99074bc9;  
     padding: 20px;
     border-radius: 10px;
     width: 250px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.514);
+}
+
+/* efeito hover dos cards status */
+.line-status:hover {
+    background: #880f47c9;   
+  }
+
+/*========================================*/
+
+
+/* JADE */
+.line-status1 {
+    background: #14bd3ea9;  /* jade*/
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    font-size: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.514);
+    
+    
+}
+.line-status1:hover {
+    background: #04701fbd;  /* jade*/
+  }
+
+/*========================================*/
+
+/* SAFIRA */
+
+  .line-status2 {
+    background: #072986c5; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.514);
+}
+
+.line-status2:hover {
+    background: #0a2263ab;  
+  }
+
+/*========================================*/
+
+/* TURQUESA */
+  .line-status3 {
+    background: #068c91b9; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px; 
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.514);
+}
+
+.line-status3:hover {
+    background: #04767ab9; 
+  }
+
+/*========================================*/
+
+/* CORAL */
+
+  .line-status4 {
+    background: #f0692a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.514);
+    
+}
+
+.line-status4:hover {
+    background: #d3571e;  
+  }
+
+/*========================================*/
+
+/* DIAMANTE */
+
+  .line-status5 {
+    background: #807f7fe5; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.514);
+}
+
+.line-status5:hover {
+    background: #949393e5; 
+  }
+
+/* FIM HOVER DOS CARDS */
+/*========================================*/
+
+  /* hover do texto */ 
+
+  .title1:hover{
+    font-weight: bolder;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.title2:hover{
+    font-weight: bolder;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+
+.title3:hover{
+    font-weight: bolder;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.title4:hover{
+    font-weight: bolder;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.title5:hover{
+    font-weight: bolder;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+  /* diamante*/
+.title6:hover{
+    font-weight: bolder;
+    color: #ffffff;
+    text-transform: uppercase;
+
 }
 
 /* footer */
@@ -277,8 +404,7 @@ main{  é usado p caso queira mandar p baixo
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 47%; 
-    
+    width: 47%;   
 } 
 
 /* responsividade*/
